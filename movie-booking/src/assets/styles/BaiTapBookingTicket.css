@@ -1,5 +1,6 @@
 html, body {
   font-family: 'Baloo 2', cursive!important;
+  height: 100%;
 }
 
 .bookingMovie{
@@ -9,8 +10,8 @@ html, body {
 .bookingMovieBackground {
   background-image: url('../images/bgmovie.jpg');
   background-size: cover;
-  height: 100vh;
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,.8);
+  height: 100vh;
 }
 
 .bookingMovie__heading--large{
@@ -18,6 +19,7 @@ html, body {
     font-weight: bold;
     font-size: 2em;
     text-align: center;
+    text-transform: uppercase;
 }
 .bookingMovie__heading--mid{
   color: white;
@@ -30,11 +32,27 @@ html, body {
     width: 45px;
     height: 35px;
     font-size: 12px;
-    /* margin-left: 2%;
-    margin-bottom: 1%; */
+    margin-left: 10px;
+    margin-bottom: 10px;
     border-radius: 5px;
+    color: #000;
+    font-weight: bold;
+    background-color: white;
+    padding: 5px;
+    cursor: pointer;
 }
-
+.gheHangDau {
+    width: 45px;
+    height: 35px;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px;
+    cursor: pointer;
+}
 .rowNumber{
     /* font-size: 25px; */
     width: 45px;
@@ -50,8 +68,9 @@ html, body {
 .firstChar{
     color: yellow;
     font-size: 35px;
-    margin-right: 15px;
-
+    width: 45px;
+    height: 35px;
+    margin-bottom: 10px;
 }
 
 .screen{
@@ -66,7 +85,16 @@ html, body {
     margin: auto;
 }
 
-
+.gheChuaChon{
+  border: 3px solid orange;
+  width: 45px;
+  height: 35px;
+  font-size: 12px;
+  /* margin-left: 2%;
+  margin-bottom: 1%; */
+  border-radius: 5px;
+  color: #fff;
+}
 .gheDuocChon {
     border: 3px solid orange;
 
@@ -77,7 +105,6 @@ html, body {
     border-radius: 5px;
     width: 45px;
     height: 35px;
-
 }
 
 .gheDangChon {
@@ -89,5 +116,4 @@ html, body {
     border-radius: 5px;
     width: 45px;
     height: 35px;
-
 }

@@ -1,7 +1,10 @@
 import * as MovieConstant from '../Constant/MovieConstant';
 
-const movieState =   [
-  {
+import danhSachGheData from '../../data/danhSachGhe.json';
+
+const movieState = {
+  chairList: [ 
+    {
     "hang": "", 
     "danhSachGhe": [
       {"soGhe":"1","gia":0},
@@ -182,9 +185,9 @@ const movieState =   [
       {"soGhe":"J12","gia":75000,"daDat":false}
     ] 
   }
-
   
-]
+  ]
+}
 
 export default (state = movieState, action) => {
   switch (action.type){
