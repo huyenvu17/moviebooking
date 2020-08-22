@@ -1,8 +1,7 @@
 import * as MovieConstant from '../Constant/MovieConstant';
-export function tangGiamMenu(burgerItem, tangGiam){
+export function bookingTicket(chairItem){
   return{
-    type: MovieConstant.INCREASE_DECREASE_ORDER,
-    burgerItem,
-    tangGiam: tangGiam
+    type: MovieConstant.NEW_BOOKING,
+    chairItem,
   }
 }

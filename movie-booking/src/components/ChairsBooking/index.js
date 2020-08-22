@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-
-export default class ChairsBooking extends Component {
+import {connect} from 'react-redux';
+class ChairsBooking extends Component {
   render() {
+    console.log(this.props.chairsBookingList)
     return (
       <div>
         <div className="bookingMovie__heading--mid">Danh sách ghế được chọn</div>
@@ -46,3 +47,11 @@ export default class ChairsBooking extends Component {
     )
   }
 }
+
+const mapStateToProps = state => {
+  return{
+    chairsBookingList: state.stateMovieReducer.chosenChairList
+  }
+}
+
+export default connect(mapStateToProps)(ChairsBooking)
