@@ -5,3 +5,14 @@ export function bookingTicket(chairItem){
     chairItem,
   }
 }
+export function removeBookingChair(bookingChairItem){
+  return{
+    type: MovieConstant.REMOVE_CHAIR,
+    bookingChairItem,
+  }
+}
+export function newBookingChair(){
+  return{
+    type: MovieConstant.CHAIR_BOOKED,
+  }
+}
