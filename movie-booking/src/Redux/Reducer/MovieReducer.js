@@ -10,16 +10,14 @@ const movieState = {
 export default (state = movieState, action) => {
   switch (action.type){
     case MovieConstant.NEW_BOOKING: {
-      //console.log(MovieConstant.NEW_BOOKING, action.chairItem)
       let chosenChairListUpdate = [...state.chosenChairList];
       let {chairItem} = action;
-      let index = chosenChairListUpdate.findIndex(chairItem => chairItem.soGhe === chairItem.soGhe);
+      let index = chosenChairListUpdate.findIndex(chairItemChosen => chairItemChosen.soGhe === chairItem.soGhe);
       if (index != -1) {
         chosenChairListUpdate.splice(index, 1);
       }
       else{
         chosenChairListUpdate.push(chairItem);
-
       }
       state.chosenChairList = chosenChairListUpdate;
       return {...state}
