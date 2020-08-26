@@ -15,15 +15,14 @@ export default (state = movieState, action) => {
       let {chairItem} = action;
       let index = chosenChairListUpdate.findIndex(chairItem => chairItem.soGhe === chairItem.soGhe);
       if (index != -1) {
-        //chairItem.daDat = true;
-        //console.log(chairItem, index);
-        //chosenChairListUpdate.splice(index, 1);
+        chosenChairListUpdate.splice(index, 1);
       }
-      chosenChairListUpdate.push(chairItem)
-      state.chosenChairList = chosenChairListUpdate;
-      console.log(state.chosenChairList)
+      else{
+        chosenChairListUpdate.push(chairItem);
 
-      return {...state, ...state.chosenChairList}
+      }
+      state.chosenChairList = chosenChairListUpdate;
+      return {...state}
     }
     case MovieConstant.REMOVE_CHAIR: {
       let chosenChairListUpdate = [...state.chosenChairList];

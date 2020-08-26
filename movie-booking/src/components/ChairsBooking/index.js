@@ -27,7 +27,7 @@ class ChairsBooking extends Component {
             <tr>
               <th>Số ghế</th>
               <th>Giá</th>
-              <th>Huỷ</th>
+              {/* <th>Huỷ</th> */}
             </tr>
           </thead>
           <tbody>
@@ -36,20 +36,10 @@ class ChairsBooking extends Component {
                 <tr key={index}>
                   <td>{chosenChair.soGhe}</td>
                   <td>{chosenChair.gia}</td>
-                  <td><button className="btn btn-danger" onClick={() => removeBookingChair(chosenChair)}>Huỷ</button></td>
+                  {/* <td><button className="btn btn-danger" onClick={() => removeBookingChair(chosenChair)}>Huỷ</button></td> */}
                 </tr>
               )
             })}
-            <tr>
-              <td scope="row" />
-              <td />
-              <td />
-            </tr>
-            <tr>
-              <td scope="row" />
-              <td />
-              <td />
-            </tr>
           </tbody>
         </table>
         <button className="btn btn-primary" onClick={() => confirmChairBooked()}>Xác nhận đặt chỗ</button>
